@@ -13,3 +13,21 @@ There are many ways to generate a new GPG, including programs that generates a n
 
 Also we can see the GPG keys that we have with the command ```gpg --list-public-keys```
 
+## Extra information
+In this part we are going to explain how to resolve some problems, that maybe happen when we use terminal to make this changes. First if we need help with the commands that involve a GPG we can write ```gpg --help```, this will list all the commands available for the GPG keys.
+
+If we want to see the keys we had created we can do these:
+- ```gpg --list-secret-keys``` (see all the GPG KEYS)
+- ```gpg --list-secret-keys``` --keyid-format=long (also see al the GPG KEYS, but adding the full id of them)
+
+If we are going to do all the changes in our IDE or the terminal, we need to configure our key, because without it, all the commits we do aren't going to be sign, this includes if we alredy had put our GPG key in github. We can add this by putting ```git commit -S -m "docs(authors):  add my name title"```, this is just an example, but the extra thing we need to put is the "**-S**" before the rest, if we are having problems with the first command, we can just use instead ```git config --global user.signingkey```, this allow us to auto sign all the commits we do.
+
+Finally, if you want to see more information about this theme you can click the image below, it will open a tab to the oficcial page of GnuPg.
+<p align="center">
+    <a target="_blank" href="https://www.gnupg.org/documentation/manpage.html">
+    <img alt="GnuPg page" src="https://wallpaperaccess.com/full/1619054.jpg" >
+    </a>
+</p>
+
+
+
