@@ -5,7 +5,7 @@ GPG KEYS <img src= "https://res.cloudinary.com/practicaldev/image/fetch/s--J3u02
 A GPG key is a security key that allows to put a sign in a commit in github, this is done for preventing another person supplant the identity of the author, when the commit is alredy done in the github platform the sign is automatically done with the commit, but when we are going to do a commit in the terminal is necesary some extra steps.
 <h1 align = "center">
     <img src = "https://media4.giphy.com/media/unQ3IJU2RG7DO/giphy.gif?cid=790b761126f2b2287a1a95503e65b24ac5298164dbe5c33b&rid=giphy.gif&ct=g" width = " 200 px" height = " 200 px">
-<h1>
+</h1>
 
 ---
 ## How to generate a GPG Key?
@@ -19,7 +19,7 @@ There are many ways to generate a new GPG, including programs that generates a n
 Also we can see the GPG keys that we have with the command ```gpg --list-public-keys```
 <h1 align = "center">
     <img src = "https://c.tenor.com/zw6xPc2NxcQAAAAM/confusedanime.gif" width = " 200 px" height = " 175 px">
-<h1>
+</h1>
 
 
 ---
