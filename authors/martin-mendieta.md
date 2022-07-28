@@ -1,2 +1,10 @@
-# Martin Mendieta
-# Probando
+#### ======================================================
+#### ================= Hi everyone, I'm Martín ================= 
+#### ======================================================
+
+**LEARNING**
+- Java
+- JavaScript
+
+**CONTACT ME**
+- Gmail --> marmenthor@gmail.com
