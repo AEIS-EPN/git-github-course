@@ -19,6 +19,7 @@
 
 </hr>
 
+---
 
 <hr>
     <h3 align ="left" >
@@ -111,6 +112,7 @@ The GPG keys allow all the people to do many things like: exchange and verify th
 </p>
 
 ---
+
 ## Conclusions
 - The GPG keys contains a strong encryption and is easy to use.
 - It's easy to generate this keys, and we have so many ways to generate them.
