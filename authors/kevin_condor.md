@@ -1,3 +1,0 @@
-# Kevin Cóndor
-
-## Career
