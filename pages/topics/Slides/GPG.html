@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>What is a GPG key?</title>
+		<style>
+			body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3 {
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.remark-slide-content h1 { font-size: 3em; }
+.remark-slide-content h2 { font-size: 2em; }
+.remark-slide-content h3 { font-size: 1.6em; }
+.footnote {
+	position: absolute;
+	bottom: 3em;
+}
+li p { line-height: 1.25em; }
+.red { color: #fa0000; }
+.large { font-size: 2em; }
+a, a > code {
+	color: rgb(249, 38, 114);
+	text-decoration: none;
+}
+code {
+	background: none repeat scroll 0 0 #F8F8FF;
+  border: 1px solid #DEDEDE;
+  border-radius: 3px 	;
+  padding: 0 0.2em;
+}
+.remark-code, .remark-inline-code { font-family: "Bitstream Vera Sans Mono", "Courier", monospace; }
+.remark-code-line-highlighted     { background-color: #373832; }
+.pull-left {
+	float: left;
+	width: 47%;
+}
+.pull-right {
+	float: right;
+	width: 47%;
+}
+.pull-right ~ p {
+	clear: both;
+}
+#slideshow .slide .content code {
+	font-size: 0.8em;
+}
+#slideshow .slide .content pre code {
+	font-size: 0.9em;
+	padding: 15px;
+}
+.main-title, .title {
+	background: #272822;
+	color: #777872;
+	text-shadow: 0 0 20px #333;
+}
+.title h1, .title h2, .main-title h1, .main-title h2 {
+	color: #f3f3f3;
+	line-height: 0.8em;
+}
+/* Custom */
+.remark-code {
+	display: block;
+	padding: 0.5em;
+}
+
+th, td {
+  border-style: dotted;
+}
+
+		</style>
+	</head>
+	<body>
+		<textarea id="source">
+<hr>
+
+<img align="left" width="90px" alt="EPN Logo" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Escudo_de_la_Escuela_Polit%C3%A9cnica_Nacional.png"/>
+
+<img align="right" width="100px" alt="FIS Logo" src="https://fis.epn.edu.ec/images/logo-FIS-sin-fondo.png"/>
+
+<h1 align= "center">
+  GPG KEYS
+  <br>
+  <img height="70px" alt="GNUPG logo" src="https://res.cloudinary.com/practicaldev/image/fetch/s--J3u02-Q5--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k8jtac4wnevslvio2fce.png" >
+</h1>
+
+<p align="center">
+    <img width ="700px" height="30px" alt="GNUPG logo" src="https://pa1.narvii.com/6659/a1a5dbd6dafaa2edc1a4fcf7a6b23ac985e620d5_hq.gif" >
+</p>
+<p align="center">
+    <img width ="330px" height="350px" alt="GNUPG logo" src="https://drluisquito.com.pe/wp-content/uploads/2022/01/flecha.gif" >
+</p>
+
+</hr>
+
+---
+
+<hr>
+    <h3 align ="left" >
+        - Contents
+        <table class = "w3-table">
+            <tr>
+                <th scope = "row" > Theme </th>
+                <th scope = "row" > Page/Slide </th>
+            </tr>
+            <tr>
+                <td> Definition of a GPG key </td>
+                <td> 2 </td>
+            </tr>
+            <tr>
+                <td> How to generate a GPG key </td>
+                <td> 3 </td>
+            </tr>
+            <tr>
+                <td> Helpful information </td>
+                <td> 4 </td>
+            </tr>
+            <tr>
+                <td> GPG utilization and another way to generate them </td>
+                <td> 5 </td>
+            </tr>
+            <tr>
+                <td> Conclusions </td>
+                <td> 6 </td>
+            </tr>
+            <tr>
+                <td> Bibliography and references </td>
+                <td> 7 </td>
+            </tr>
+            <img align="right" width ="225 px" height="225px"style="margin: right 10px;px; margin-left:10px;margin-top:140px"  alt="Doggo" src="https://c.tenor.com/MtwhTUfnNm8AAAAM/wut-dog.gif"/>
+        </table>
+    </h3>
+</hr>
+
+---
+
+## What is a GPG key?
+A GPG key is a security key that allows to put a sign in a commit in github, this is done for preventing another person supplant the identity of the author, when the commit is alredy done in the github platform the sign is automatically done with the commit, but when we are going to do a commit in the terminal is necesary some extra steps.
+
+There are many ways to generate a new GPG, including programs that generates a new key with only pressing a button, however we are going to explain how to generate a key only using commands in the git terminal
+<h1 align = "center">
+    <img src = "https://media4.giphy.com/media/unQ3IJU2RG7DO/giphy.gif?cid=790b761126f2b2287a1a95503e65b24ac5298164dbe5c33b&rid=giphy.gif&ct=g" width = " 330 px" height = " 300 px">
+</h1>
+
+---
+
+## How to generate a GPG Key?
+For generating our GPG key in the terminal we need to follow some simple steps, they are:
+1. Write the command ```gpg --full-generate-key```
+2. Select the encryption algorithm we want (It is recommended to choose the RSA and RSA algorithm)
+3. It will ask us to choose the size of bits that our key will have, being 4096 bits the maximum (It is recommended to choose 4096 bits)
+4. After that it will appear a message asking us to select the time that the key is going to be valid (NEVER select, **No expiration date**)
+5. Finally we are going to create a password for our key, and the terminal will show us the key generated in the terminal.
+
+Also we can see the GPG keys that we have with the command ```gpg --list-public-keys```
+<p align = "center">
+    <img src = "https://c.tenor.com/zw6xPc2NxcQAAAAM/confusedanime.gif" width = " 215 px" height = " 190 px">
+</p>
+
+---
+
+## Extra information
+In this part we are going to explain how to resolve some problems, that maybe happen when we use terminal to make this changes. First if we need help with the commands that involve a GPG we can write ```gpg --help```, this will list all the commands available for the GPG keys.
+
+If we want to see the keys we had created we can do these:
+- ```gpg --list-secret-keys``` (see all the GPG KEYS)
+- ```gpg --list-secret-keys``` --keyid-format=long (also see al the GPG KEYS, but adding the full id of them)
+
+If we are going to do all the changes in our IDE or the terminal, we need to configure our key, because without it, all the commits we do aren't going to be sign, this includes if we alredy had put our GPG key in github. We can add this by putting ```git commit -S -m "docs(authors):  add my name title"```, this is just an example, but the extra thing we need to put is the "**-S**" before the rest, if we are having problems with the first command, we can just use instead ```git config --global user.signingkey```, this allow us to auto sign all the commits we do.
+
+Finally, if you want to see more information about the commands we can use click the image below, it will open a tab to the oficcial page of GnuPg.
+<p align="center">
+    <a target="_blank" href="https://www.gnupg.org/documentation/manpage.html">
+    <img alt="GnuPg page" src="https://c.tenor.com/sAp9GP1ZjHAAAAAd/private-key-bitcoin-private-key.gif" width = " 390 px" height = " 230 px" >
+    </a>
+</p>
+
+---
+
+## What we can do with the GPG keys?
+The GPG keys allow all the people to do many things like: exchange and verify the authenticity of keys, encrypt and decrypt documents,sign documents,verify digital signatures, and others. Below you can watch a short video that explains how to generate a new GPG key online, and how useful it can be with a cool example.
+
+<p align ="center">
+    <iframe src="https://www.youtube.com/watch?v=4PZb0tkxuUk" width="560" height="350">
+</iframe>
+</p>
+
+---
+## Conclusions
+- The GPG keys contains a strong encryption and is easy to use.
+- It's easy to generate this keys, and we have so many ways to generate them.
+- We can protect our digital identity by adding a key to all the places we use, like github.
+- This method improves the security in our enviroment.
+- It is simple to customize our GPG key as far as encryption methods are concerned
+
+We could keep saying more conclusions about this theme, but it would be heavy to describe all of them, that's why if you want to learn all of about the GPG keys you can click in the highlighted word to see a full manual in the [GNU GPG Page](https://www.gnupg.org/gph/es/manual.html#AEN199)
+
+<p align = "center">
+    <img width="350" height="290" src = "https://i.gifer.com/origin/f9/f9cefa07e7fdb48d7eab95b7f29d8e4b.gif">
+</p>
+
+---
+
+## Bibliography
+- Mike Ashley. (1999). Gnu Privacy Guard. 30/07/2022, de GNU PG Sitio web: https://www.gnupg.org/gph/es/manual.html#AEN199
+- GnuPG. (2017). GnuPG. 30/07/2022, de Gnu Sitio web: https://www.gnupg.org/documentation/manpage.html
+- Guitiérrez. (2013). Manual de GPG. 30/07/2022, de Genbenta Sitio web: https://www.genbeta.com/desarrollo/manual-de-gpg-cifra-y-envia-datos-de-forma-segura#.
+- AEIS - EPN. (2022). git-github-course. 30/07/2022, de Github Sitio web: https://github.com/AEIS-EPN/git-github-course
+
+<p align = "center">
+    <img width="300" height="250" src = "https://c.tenor.com/-PwfUKKGJZMAAAAi/capoo-blue.gif">
+</p>
+
+
+
+
+		</textarea>
+		<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+		<script>
+			var slideshow = remark.create();
+		</script>
+		<script></script>
+	</body>
+</html>
