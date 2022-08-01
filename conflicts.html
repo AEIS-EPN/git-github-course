@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>conflicts</title>
+		<style>
+			body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3 {
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.remark-slide-content h1 { font-size: 3em; }
+.remark-slide-content h2 { font-size: 2em; }
+.remark-slide-content h3 { font-size: 1.6em; }
+.footnote {
+	position: absolute;
+	bottom: 3em;
+}
+li p { line-height: 1.25em; }
+.red { color: #fa0000; }
+.large { font-size: 2em; }
+a, a > code {
+	color: rgb(249, 38, 114);
+	text-decoration: none;
+}
+code {
+	background: none repeat scroll 0 0 #F8F8FF;
+  border: 1px solid #DEDEDE;
+  border-radius: 3px 	;
+  padding: 0 0.2em;
+}
+.remark-code, .remark-inline-code { font-family: "Bitstream Vera Sans Mono", "Courier", monospace; }
+.remark-code-line-highlighted     { background-color: #373832; }
+.pull-left {
+	float: left;
+	width: 47%;
+}
+.pull-right {
+	float: right;
+	width: 47%;
+}
+.pull-right ~ p {
+	clear: both;
+}
+#slideshow .slide .content code {
+	font-size: 0.8em;
+}
+#slideshow .slide .content pre code {
+	font-size: 0.9em;
+	padding: 15px;
+}
+.main-title, .title {
+	background: #272822;
+	color: #777872;
+	text-shadow: 0 0 20px #333;
+}
+.title h1, .title h2, .main-title h1, .main-title h2 {
+	color: #f3f3f3;
+	line-height: 0.8em;
+}
+/* Custom */
+.remark-code {
+	display: block;
+	padding: 0.5em;
+}
+th, td {
+  border-style: groove;
+  background-color: #fdffcf;
+  border-radius: 5px;
+  border-color: #c2bc0e;
+}
+
+		</style>
+	</head>
+	<body>
+		<textarea id="source">
+<img align="left" width="80px" alt="EPN Logo" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Escudo_de_la_Escuela_Polit%C3%A9cnica_Nacional.png"/>
+
+<img align="right" width="95px" alt="FIS Logo" src="https://fis.epn.edu.ec/images/logo-FIS-sin-fondo.png"/>
+
+<h1 align= "center">
+  <strong> CONFLICTS </strong>
+  <img width="480px" alt="GitHub Logo Remastered" src="https://i.pinimg.com/originals/c4/7b/9a/c47b9a94986b92ac592745ad3a1b8815.gif"/>
+</h1>
+
+<p align="center">
+  Made by: @seebaas2 & @santiagobejarano
+</p>
+
+---
+
+<br>
+<h1 align= "center">
+  <strong> Contents </strong>
+</h1>
+<br>
+<br>
+<table class = "default">
+            <tr>
+                <th scope = "row" > Theme </th>
+                <th scope = "row" > Slide </th>
+            </tr>
+            <tr>
+                <td> What a conflict is? </td>
+                <td align="center"> 3 </td>
+            </tr>
+            <tr>
+                <td> Example </td>
+                <td align="center"> 4 </td>
+            </tr>
+            <tr>
+                <td> How does git help us? </td>
+                <td align="center"> 5 </td>
+            </tr>
+            <tr>
+                <td> How to identify a conflict on git? </td>
+                <td align="center"> 6 </td>
+            </tr>
+            <tr>
+                <td> It can be fixed? </td>
+                <td align="center"> 7 </td>
+            </tr>
+            <tr>
+                <td> Commands </td>
+                <td align="center"> 8 </td>
+            </tr>
+            <tr>
+                <td> Video </td>
+                <td align="center"> 9 </td>
+            </tr>
+            <tr>
+                <td> Conclusions </td>
+                <td align="center"> 10 </td>
+            </tr>
+            <tr>
+                <td> Bibliography </td>
+                <td align="center"> 11 </td>
+            </tr>
+            <img align="right" height="300px" style="margin-left:40px"  alt="Superdoggo" src="https://www.liveabout.com/thmb/9oyhVbEg1OHIPqxsUSe9Pif61U8=/640x640/filters:no_upscale():max_bytes(150000):strip_icc()/superdog-treadmill-5af44eb2eb97de003d8c771d.gif"/>
+        </table>
+
+---
+
+<h2 align= "center">
+  <strong> What a conflict is? </strong>
+</h2>
+
+Conflicts are "clashes" between two changes made into the same repository, in other words, if developer 'A' tries to edit a code that developer 'B' is editing, a conflict could happen. To avoid conflicts, it's recommended to work on isolated branches.
+
+<h1 align="center">
+    <img width="400px" alt="BettyYoAUstedLaAmo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo1fUcV1_SQKrwhkJqUP5CDuenPafhoZftuQ&usqp=CAU"/>
+</h1>
+
+
+---
+
+<h2 align= "center">
+  <strong> Example </strong>
+</h2>
+
+Assuming the case that in line the 5 of a file (whatever it may be) there's the word "Hello, dog!" and there's a pull request (subject spoiler) that made modifications into the same file and line with the word "Hello, cat!", a conflict inside it should appear. And with that, the person assigned to review that change must decide which of the two changes (or alternatively, both) are kept.
+
+<h1 align="center">
+    <img width="725px" alt="Conflict" src="https://res.cloudinary.com/dyd911kmh/image/upload/v1652028749/image1_d21db326e6.png"/>
+</h1>
+
+---
+
+<h2 align= "center">
+  <strong> How does git help us? </strong>
+</h2>
+
+Although, git commonly manages to automatically integrate the new changes made by different developers, a conflict doesn't enter into this aspect, since it consists of decisions that the 'leader' of the project sees more convenient to keep inside the repository. Perhaps we should also point out the fact that conflicts only appear to the developer who is doing the merge, the rest of the team isn't aware of the conflict.
+
+The only thing that git can made is marking the file as a conflicting one, after that, the merge process is going to be stopped until resolved by the assigned developer.
+
+<h1 align="center">
+    <img width="400px" alt="Patrick destroying a computer" src="https://uvn-brightspot.s3.amazonaws.com/assets/vixes/6/6giphy_4.gif"/>
+</h1>
+
+---
+
+<h2 align= "center">
+  <strong> How to identify a conflict on git? </strong>
+</h2>
+
+<img align="right" width="300px" alt="Dumb Homer" src="https://i0.wp.com/26.media.tumblr.com/tumblr_loyozijD5F1qb22sko1_500.gif"/>
+
+A conflicting file will have odd additions inside it:
+* "<<<<<<< branch"
+* "======="
+* ">>>>>>> new_branch_to_merge_later"
+
+We'll call these new lines as a "conflict dividing lines"
+* The line "=======" is the separator that has the conflict: 
+* The upper information of the separator until the line "<<<<<<< branch" is the added content, the new content.
+* The bottom information of the separator until the line ">>>>>>> new_branch_to_merge_later" is the already existing content inside the file in the main branch
+<p align="center">
+    <img width="250px" alt="Dumb Homer, again" src="https://woobsing.com/wp-content/uploads/2016/04/giphy-31.gif"/>
+</p>
+
+---
+
+<h2 align= "center">
+  <strong> It can be fixed? </strong>
+</h2>
+
+<p>
+    Of course it can be. The most effective way to fix the conflict is editing the file, turning back to the example about the dog and cat, what we're supposed to watch into our text file is the following lines: <br>
+    <br>
+    <strong> Before in 'animals.txt' </strong> <br>
+    <img align="right" width="420px" style="margin-right:40px; margin-left:40px" alt="Trying to fix my problems" src="https://c.tenor.com/B7TP3JU7qcAAAAAC/fixed.gif"/>
+    <<<<<<< main <br>
+    Gato <br>
+    ======= <br>
+    Perro <br>
+    >>>>>>> main <br>
+    <br>
+    <strong> After in 'animals.txt' </strong> <br>
+    Gato <br>
+    Perro <br>
+</p>
+
+Basically the only thing that has been done in this case was to leave both of the information by erasing the "dividing lines of conflicts". We can do this because their existence were independent of each other and keeping both do not affect the file functionality. 
+
+Once the conflict is solved, we're in the ability to make the fusion of the pull request to the main branch of the repository and and finally make the final commit.
+
+---
+
+<h2 align= "center">
+  <strong> Commands </strong>
+</h2>
+
+<table class = "default">
+            <tr >
+                <td align="center"> <b> Command </b> </th>
+                <td align="center"> <b> What it is for? </b> </th>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"> <b> Basic ones </b> </td>
+            </tr>
+            <tr>
+                <td> <b> git status </b> </td>
+                <td> During a merge it will help to identify conflicting files. </td>
+            </tr>
+            <tr>
+                <td> <b> git log --merge </b> </td>
+                <td> A log will be created with a list of conflicting commits between the branches to be merged. </td>
+            </tr>
+            <tr>
+                <td> <b> git diff </b> </td>
+                <td> Helps to find differences between the states of a repository/files. This is useful for predicting and avoiding merge conflicts. </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"> <b> Commands used when git can't start a merge </b> </td>
+            </tr>
+            <tr>
+                <td> <b> git checkout </b> </td>
+                <td> Can be used to undo changes to files or to change branches </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"> <b> Commands used when git conflicts arise during a merge </b> </td>
+            </tr>
+            <tr>
+                <td> <b> git merge abort </b> </td>
+                <td> It will exit the merge process and return the branch to the previous state </td>
+            </tr>
+            <tr>
+                <td> <b> git reset </b> </td>
+                <td> Can be used during a merge conflict to restore conflicting files to a proper state </td>
+            </tr>
+</table>
+
+<p align="center">
+    <img width="300px" alt="Coding like a pro" src="https://c.tenor.com/GfSX-u7VGM4AAAAC/coding.gif"/>
+</p>
+
+---
+
+<h2 align= "center">
+  <strong> Video </strong>
+</h2>
+
+If you're a person that understand the things better watching than reading, this video is going to be helpful for you, basically, you're going to find all the theory stuff put into practice:
+
+<p align="center">
+    <a title="Conflicts" href="https://www.youtube.com/watch?v=mOJazBNrG-c">
+        <img height="350px" src="https://crehana-blog.imgix.net/media/filer_public/21/0a/210a662f-8b68-4f4f-b81b-0e5658a03055/video-marketing-gif.gif" alt="Youtube video"/>
+    </a>
+</p>
+
+---
+
+<h2 align= "center">
+  <strong> Conclusions  </strong>
+</h2>
+
+* A conflict arises when two independent branches have edited the same line of a file or when a file has been removed in a branch, but edited in the other.
+* Conflicts are commonly seen inside a team environment
+* One way to solve a conflict is: manually, this conflict will always be solved by the assigned developer or the "owner" of the repository
+<p align="center">
+    <img width="600px" alt="Steps for git" src="https://envo.app/wp-content/uploads/sites/4/2022/02/how-to-fork-a-github-repository-a-complete-workflow.gif"/>
+</p>
+
+---
+
+<h2 align= "center">
+  <strong> Bibliography </strong>
+</h2>
+ 
+* Atlassian (2018) "Conflictos de Git merge" Avilable at: https://www.atlassian.com/es/git/tutorials/using-branches/merge-conflicts
+* And, our incredible engineer: **Alejandro Llanganate**
+<p align="center">
+    <img width="600px" alt="A mono typing" src="https://media.giphy.com/media/O4iaxRcEmwq2Y/giphy.gif"/>
+</p>
+
+		</textarea>
+		<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+		<script>
+			var slideshow = remark.create();
+		</script>
+		<script></script>
+	</body>
+</html>
