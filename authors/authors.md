@@ -6,3 +6,4 @@
 - Jorge Segovia - Aprendiz de git
 - Kevin Martinez
 - Fernando Hernandez - AEIS Student
+- Pablo Sarzosa - AEIS Student
