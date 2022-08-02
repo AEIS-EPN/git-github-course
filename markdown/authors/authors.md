@@ -7,4 +7,5 @@
 - Kevin Martinez
 - Fernando Hernandez - AEIS Student
 - Pablo Sarzosa - AEIS Student
+- Steven Quispe -AEIS Student
 - Kevin Cóndor - AEIS Student
