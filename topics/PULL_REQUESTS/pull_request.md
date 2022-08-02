@@ -7,8 +7,7 @@
 <h2 align= "center">
   PULL REQUEST 
   <br>
-  <br>
-  <br>
+
   
   <img src = "https://www.campusmvp.es/recursos/image.axd?picture=/2017/2T/in-case-of-fire-git-push.png" width = " 350 px" height = " 330 px">
 
@@ -105,3 +104,54 @@ Now that we’ve gone through what a pull request is and how they work, let’s 
 9. When any and all change requests are made, Erica will then approve Russell’s pull request.
 
 10. Russell’s new update is then merged with the main project repository, and application users can now begin using the new application feature.
+
+---
+
+## Commands
+Here are the most important commands that you'll use when you have to do a pull request. All this commands can be executed on Git Bash.
+
+You'll use the next command for "download" your fork and make it become a local respository on your PC. Make sure that bash is opened in the directory you want to download the project.
+```bash
+git clone https://github.com/YourUser/YourForksName
+```
+Once you made all changes needed, you can make a commit to save changes to your local respository. Using the commands below will allow you to do this.
+```bash
+git add hereTheFileYouChange
+git commit -m "Here a short description of the changes made"
+```
+You can "push" the changes you made on your local repository and upload them to your remote repository (your fork). Also, you can update your local repository by downloading the changes from your fork using "pull" command. Be sure to push the name of the branch you want to use. In this example, it is main branch.
+```bash
+git push origin main
+git pull origin main
+```
+
+
+---
+
+## Video
+
+Understanding how to create a pull request can be difficult, so here's a video that you can checkout to help you to understand how to make a pull request effectively.
+
+I recommend you to take notes 😉📝
+
+<div align="center">
+  <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Zqft6yNRuNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+As you can see, creating a pull request is not so difficult and it is really useful when you want to use GitHub to colaborate with others.
+
+---
+
+## Conclusions
+
+- Pull Request is the final step to colaborate with other's projects.
+- To make a pull request, you just have to make a fork of the project, clone that repository locally, make your changes, push them to your fork and create a pull request.
+- One person will be in charge of approving pull requests, verifying if there are any conflicts, and checking to see if any changes need to be made.
+- If you pull request is approved, it will be merged to the main project and you'll be shown as a contributor od the project.
+<div align="center">
+  <br>
+  <img src="https://i.gifer.com/7IjS.gif" height="300">
+</div>
+
+
