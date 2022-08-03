@@ -121,3 +121,14 @@ Review it and if it completes the requirments merge it into one project branch.
 Thanks for come this far :)
 <img src="https://media3.giphy.com/media/el7VG1XOOvi24oRXFt/giphy.gif?cid=ecf05e47pzrnh08rghvoc7vwcdcorgakut03n0r1bg0n63ay&rid=giphy.gif&ct=g" alt="3.step" width="500px">
 </h1>
+
+---
+
+## Bibliography:
+- Marc Diethelm. (2014). Contributing. 03/08/2022, de GitHub Sitio web: https://github.com/MarcDiethelm/contributing/blob/master/README.md
+- Alejandro Llangantes. (202). Clase 22: Pull Requests. 03/08/2022, de Notion web: https://perpetual-donkey-b4c.notion.site/Clases-grabadas-7148cef220b64a178e9f2688de74bc8f
+
+
+<p align = "center">
+    <img width="300" height="350" src = "https://media3.giphy.com/media/kCVIL0CLNWv2E/giphy.gif?cid=ecf05e4742njf0np4aqfoftzz44c0po6nmy17w4xia21xmox&rid=giphy.gif&ct=g">
+</p>
