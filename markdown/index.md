@@ -6,6 +6,9 @@
 Website about the contents learned in our Git &amp; Github Training.
 
 **Contents:**
+- TAGS
+- PULL REQUESTS
+- GITHUB CLI
 
 
 **Contributors:**
