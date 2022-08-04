@@ -10,6 +10,7 @@ Website about the contents learned in our Git &amp; Github Training.
 - PULL REQUESTS
 - GITHUB CLI
 - ISSUES
+- Probando los tags :o
 
 
 **Contributors:**
