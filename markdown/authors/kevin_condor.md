@@ -12,6 +12,7 @@
 
 <img align="right" height="130px" style="margin-right:30px; margin-left:40px" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2712bd29493563.55f6ec5e98924.jpg">
 
+---
 <h4>Hobbies</h4>
 
 <ul>
