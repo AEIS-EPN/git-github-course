@@ -6,13 +6,14 @@
 Website about the contents learned in our Git &amp; Github Training.
 
 **Contents:**
-- TAGS
-- PULL REQUESTS
-- GITHUB CLI
-- ISSUES
-- Probando los tags :o
+- <a href="./pages/topics/conflicts.html">Git merge conflicts</a> 
+- <a href="./pages/topics/contributing.html">Contribute</a> 
+- <a href="./pages/topics/github-api.html">GitHub API</a> 
+- <a href="./pages/topics/github-issues.html">GitHub Issues</a> 
+- <a href="./pages/topics/gpg.html">GPG</a> 
+- <a href="./pages/topics/pull-request.html">Pull Request</a> 
+- <a href="./pages/topics/tags.html">Tags</a> 
 
-
-**Contributors:**
+**[Contributors:](./pages/authors/authors.html)**
 
 <img style="width:100%;" src="https://contrib.rocks/image?repo=AEIS-EPN/git-github-course">
